@@ -10,7 +10,7 @@ echo %username% is correct right?
 if /i "%boolean%"=="y" (
    powershell -ExecutionPolicy Bypass -File "%EnterFilePath%" -username "%Username%"
 )
-)else(
+else(
    call :Start    
 )
 goto :eof
